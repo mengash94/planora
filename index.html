@@ -2,7 +2,7 @@
 <html lang="he">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>PlanOra Native</title>
 
@@ -10,7 +10,7 @@
       /* Safe area variables (Android/iOS) */
       :root {
         --safe-top: env(safe-area-inset-top);
-        --safe-bottom: env(safe-area-inset-bottom);
+        /* --safe-bottom: env(safe-area-inset-bottom); */
         --safe-left: env(safe-area-inset-left);
         --safe-right: env(safe-area-inset-right);
       }
@@ -24,11 +24,11 @@ body {
   box-sizing: border-box;
 
   /* בשלב הזה – תוריד לגמרי את ה-padding מה-safe area */
-    padding-top: var(--safe-top);
+    /* padding-top: var(--safe-top);
      padding-bottom: var(--safe-bottom);
      padding-left: var(--safe-left);
      padding-right: var(--safe-right);
-  
+   */
 }
 
 /* ה-wrap כבר לא על 100dvh */

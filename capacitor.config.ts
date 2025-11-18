@@ -11,6 +11,11 @@ const config: CapacitorConfig = {
   },
   android: { allowMixedContent: true },
   plugins: {
+    StatusBar: {
+      overlaysWebView: false, // זה החשוב! מונע מהאתר להיכנס מתחת לבר העליון
+      backgroundColor: '#f09f27', // צבע הרקע (הכתום שלך)
+      style: 'DARK' // טקסט כהה או בהיר
+    },
     // ✅ שלב 1: הגדרת URL Scheme
     App: {
       urlScheme: 'planora'
